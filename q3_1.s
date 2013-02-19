@@ -1,7 +1,7 @@
 .data
 .align 4
-x: .long 2
-y: .long 2
+x: .long 11111
+y: .long 11111
 
 .text
 .global main
