@@ -9,20 +9,16 @@ main:
   mov $x, %esi # xの先頭アドレス
   mov $y, %edi # yの先頭アドレス
 
-  mov $0, %eax
-  add x, %eax
+  mov x, %eax
   add y, %eax
 
-  mov $0, %ebx
-  adc 4(%esi), %ebx
+  mov 4(%esi), %ebx
   adc 4(%edi), %ebx
 
-  mov $0, %ecx
-  adc 8(%esi), %ecx
+  mov 8(%esi), %ecx
   adc 8(%edi), %ecx
 
-  mov $0, %edx
-  adc 12(%esi), %edx
+  mov 12(%esi), %edx
   adc 12(%edi), %edx
 
   call stop
